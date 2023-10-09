@@ -18,6 +18,10 @@
   color: white;
 }
 
+.activeLink {
+  font-weight: bold;
+}
+
 .contactUs {
   color: #f8dd4f;
 }

@@ -9,6 +9,12 @@ const useImageLoad = ({ src }) => {
     img.onload = () => {
       setIsImageLoaded(true);
     };
+  }, [src]);
+
+  useEffect(() => {
+    return () => {
+      setIsImageLoaded(false);
+    };
   }, []);
 
   return { isImageLoaded };
