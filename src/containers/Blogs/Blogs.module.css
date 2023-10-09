@@ -1,0 +1,19 @@
+.headingBox {
+  display: flex;
+  justify-content: center;
+}
+
+.halfBox {
+  width: 50%;
+}
+
+.subHeadingBox {
+  margin-top: 1rem;
+}
+
+.subHeading {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}

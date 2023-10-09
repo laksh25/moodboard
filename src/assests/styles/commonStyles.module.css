@@ -1,0 +1,13 @@
+.container {
+  flex: 1;
+  background-color: #061c33;
+  padding: 74px 60px;
+}
+
+.pageHeading {
+  text-transform: uppercase;
+  letter-spacing: 12.8px;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+}

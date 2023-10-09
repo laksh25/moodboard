@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-height: 20px;
+  background-color: #01152e;
+  padding: 30px;
+}
+
+.navContainer {
+  display: flex;
+  gap: 75px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.contactUs {
+  color: #f8dd4f;
+}

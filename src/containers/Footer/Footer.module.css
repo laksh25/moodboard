@@ -1,0 +1,75 @@
+.footer {
+  box-shadow: 0px -6px 17px 0px rgba(255, 255, 255, 0.19);
+  background-color: #01152e;
+  padding: 72px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.heading {
+  color: white;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 12.8px;
+  text-transform: uppercase;
+}
+
+.bottomRow {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text {
+  color: white;
+}
+
+.btnContainer {
+  margin-top: 1.5rem;
+}
+
+.getInTouchBtn {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.53) inset;
+  background-color: rgba(252, 224, 80, 1);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.rightColumn {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.subHeadingBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subHeading {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+}
