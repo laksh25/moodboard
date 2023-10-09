@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+}
+
+.isClickable {
+  cursor: pointer;
+}
+
+.imgStyles {
+  width: 100%;
+  height: auto;
+  border-radius: 26px;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.textStyles {
+  padding: 0 1rem;
+  text-align: center;
+}

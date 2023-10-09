@@ -11,3 +11,18 @@
   font-size: 24px;
   line-height: 30px;
 }
+
+.commonBoxStyles {
+  border: 1px solid #fce050;
+  color: rgba(255, 255, 255, 1);
+  padding: 12px 1rem;
+  background-color: #26384c;
+  border-radius: 1rem;
+}
+
+.textStyles {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

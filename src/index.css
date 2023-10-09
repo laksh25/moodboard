@@ -18,6 +18,9 @@ code {
   background-color: #061c33;
 }
 
-p {
+p,
+button,
+link {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }

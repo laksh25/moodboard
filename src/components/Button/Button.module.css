@@ -1,10 +1,4 @@
 .btnStyles {
-  border: 1px solid #fce050;
-  color: rgba(255, 255, 255, 1);
-  padding: 12px 1rem;
-  font-family: "Montserrat", sans-serif;
   cursor: pointer;
-  background-color: #26384c;
-  border-radius: 1rem;
   min-width: 140px;
 }

@@ -1,0 +1,20 @@
+.container {
+  border-radius: 26px;
+  background: rgba(0, 0, 0, 0.42);
+  padding: 30px;
+}
+
+.imgStyles {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  margin: 1rem 0;
+}
+
+.description {
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
