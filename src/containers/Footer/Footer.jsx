@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../../components/Button/Button";
+import classes from "../../assests/styles/commonStyles.module.css";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -17,7 +18,9 @@ const Footer = () => {
               Neuroscience to Predict User Experiences.
             </p>
             <div className={styles.btnContainer}>
-              <Button customStyles={styles.getInTouchBtn}>Get in Touch</Button>
+              <Button customStyles={classes.yellowBtnStyles}>
+                Get in Touch
+              </Button>
             </div>
           </div>
           <div className={styles.rightColumn}>

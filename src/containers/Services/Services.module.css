@@ -1,0 +1,41 @@
+.topRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.rightSection {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.marginTop {
+  margin-top: 1rem;
+}
+
+.btnContainer {
+  margin-top: 5.5rem;
+}
+
+.secondRow {
+  width: 100%;
+  overflow: auto;
+  padding: 0 1rem;
+  margin: 7rem 0;
+}
+
+.serviceActionRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.serviceBtn {
+  min-width: 250px;
+}
+
+.serviceDescriptionRow {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}

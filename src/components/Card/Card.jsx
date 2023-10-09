@@ -1,13 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import useImageLoad from "../../CustomHooks/useImageLoad";
 import landscapePlaceholder from "../../img/landscapePlaceholder.svg";
 import classes from "../../assests/styles/commonStyles.module.css";
 import styles from "./Card.module.css";
 
-const Card = ({ alt, img, subText, text }) => {
+const Card = ({ alt, img, isClickable, onClick, subText, text }) => {
+  const { isImageLoaded } = useImageLoad({ src: img });
+
+  if (!isImageLoaded) {
+    return <> </>;
+  }
+
   return (
-    <div className={styles.container}>
+    <div
+      className={`${isClickable ? classes.clickable : ""} ${styles.container}`}
+      onClick={onClick ? onClick : () => {}}
+    >
       <div>
         <img
           src={img || landscapePlaceholder}
@@ -22,7 +32,7 @@ const Card = ({ alt, img, subText, text }) => {
       </div>
       {!!subText && (
         <div>
-          <p className={styles.description}>{subText}</p>
+          <p className={classes.subText}>{subText}</p>
         </div>
       )}
     </div>
@@ -32,6 +42,8 @@ const Card = ({ alt, img, subText, text }) => {
 Card.propTypes = {
   alt: PropTypes.string,
   img: PropTypes.node,
+  isClickable: PropTypes.bool,
+  onClick: PropTypes.func,
   text: PropTypes.string,
 };
 

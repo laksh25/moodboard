@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
@@ -12,6 +13,8 @@ import classes from "../../assests/styles/commonStyles.module.css";
 import styles from "./Blogs.module.css";
 
 const Blogs = () => {
+  const history = useHistory();
+
   return (
     <div className={classes.container}>
       <div className={styles.centerItems}>
@@ -80,6 +83,8 @@ const Blogs = () => {
                 img={blog.image}
                 text={blog.heading}
                 subText={blog.description}
+                isClickable
+                onClick={() => history.push(`/blogs/${blog.id}`)}
               />
             </div>
           ))}

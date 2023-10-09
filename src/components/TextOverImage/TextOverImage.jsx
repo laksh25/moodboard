@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import landscapePlaceholder from "../../img/landscapePlaceholder.svg";
+import useImageLoad from "../../CustomHooks/useImageLoad";
 import classes from "../../assests/styles/commonStyles.module.css";
 import styles from "./TextOverImage.module.css";
 
 const TextOverImage = ({ alt, img, isClickable, onClick, text }) => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const image = new Image();
-    image.src = img;
-    image.onload = () => {
-      setIsImageLoaded(true);
-    };
-  }, [img]);
+  const { isImageLoaded } = useImageLoad({ src: img });
 
   return (
     <div

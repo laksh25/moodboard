@@ -1,6 +1,7 @@
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import About from "./containers/About/About";
+import Blog from "./containers/Blog/Blog";
 import Blogs from "./containers/Blogs/Blogs";
 import ContactUs from "./containers/ContactUs/ContactUs";
 import Footer from "./containers/Footer/Footer";
@@ -27,6 +28,9 @@ function App({ history }) {
           </Route>
           <Route exact path={BLOGS}>
             <Blogs />
+          </Route>
+          <Route exact path={"/blogs/:id"}>
+            <Blog />
           </Route>
           <Route exact path={CONTACT_US}>
             <ContactUs />
